@@ -28,7 +28,7 @@ public class Exercicio7 {
                String[] vertice = linha.split("\t"); //separar as linhas e adicionar ao vetor
                  
                for (int i = 0; i < vertice.length - 1; i++){ 
-               grafo[vertices].add(vertice[i]); //adicionar os valores de um vertice dentro da lista em posição [j]
+               grafo[vertices].add(vertice[i]); //adicionar os valores do vertice dentro da lista em posição [j]
                }
                vertices++; //ao passar para uma nova linha, icrementa um novo vertice
             }
