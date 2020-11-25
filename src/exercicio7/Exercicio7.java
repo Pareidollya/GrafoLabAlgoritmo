@@ -27,7 +27,7 @@ public class Exercicio7 {
                String linha = scanner.nextLine();
                String[] vertice = linha.split("\t"); //separar as linhas e adicionar ao vetor
                  
-               for (int i = 0; i < vertice.length - 1; i++){ 
+               for (int i = 0; i < vertice.length - 1; i++){ //adicionar as linhas a lista de adjacencia
                grafo[vertices].add(vertice[i]); //adicionar os valores do vertice dentro da lista em posição [j]
                }
                vertices++; //ao passar para uma nova linha, icrementa um novo vertice
@@ -50,7 +50,7 @@ public class Exercicio7 {
             System.out.println();
          }
     }
-    static void complexidade(LinkedList[] grafo){ //{n + m | n = número de vértices do grafo e m = número de arestas}
+    static void complexidade(LinkedList[] grafo){ 
         int vertices = grafo.length;
         int arestas = 0;
         for (int k = 0; k<vertices;k++){
